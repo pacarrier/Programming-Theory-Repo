@@ -19,16 +19,17 @@ public class ShapeDisplay : MonoBehaviour
         UpdateText();
     }
 
+    private void OnScaleSliderChanged(float scaleFactor)
+    {
+        shape.ScaleFactor = scaleFactor;
+        UpdateText();
+    }
+
+    // ABSTRACTION
     private void UpdateText()
     {
         propertiesText.text = shape.Name + "\n" +
             "Area: " + shape.Area().ToString("f2") + "\n" +
             "Volume: " + shape.Volume().ToString("f2");
-    }
-
-    private void OnScaleSliderChanged(float scaleFactor)
-    {
-        shape.ScaleFactor = scaleFactor;
-        UpdateText();
     }
 }

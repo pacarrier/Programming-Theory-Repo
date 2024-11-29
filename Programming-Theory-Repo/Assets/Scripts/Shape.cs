@@ -1,14 +1,17 @@
 using UnityEngine;
 
+// Base class for all shapes
 public abstract class Shape : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 50f;
 
     [SerializeField] private float scaleFactor = 1f;
 
+    // ENCAPSULATION
     public string Name
     { get { return gameObject.name; } }
 
+    // ENCAPSULATION
     public float ScaleFactor
     {
         get { return scaleFactor; }
