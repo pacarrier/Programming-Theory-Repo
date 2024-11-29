@@ -402,6 +402,7 @@
 "Assets/Scripts/Cube.cs"
 "Assets/Scripts/Cylinder.cs"
 "Assets/Scripts/Shape.cs"
+"Assets/Scripts/ShapeDisplay.cs"
 "Assets/Scripts/Sphere.cs"
 -langversion:9.0
 /deterministic

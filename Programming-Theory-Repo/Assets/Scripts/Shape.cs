@@ -5,6 +5,10 @@ public abstract class Shape : MonoBehaviour
     [SerializeField] private float rotationSpeed = 50f;
 
     [SerializeField] private float scaleFactor = 1f;
+
+    public string Name
+    { get { return gameObject.name; } }
+
     public float ScaleFactor
     {
         get { return scaleFactor; }
